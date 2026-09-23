@@ -28,7 +28,6 @@ const fallbackOffer = {
 };
 
 const byId = (id) => document.getElementById(id);
-const formatDate = (date) => new Intl.DateTimeFormat("pl-PL", { day: "numeric", month: "long", year: "numeric" }).format(new Date(`${date}T12:00:00`));
 const themeProperties = { ink: "--ink", paper: "--paper", yellow: "--yellow", blue: "--blue", pink: "--pink", orange: "--orange" };
 
 function applyTheme(theme = {}) {
@@ -60,7 +59,6 @@ function renderOffer(offer) {
   byId("offer-role").textContent = offer.role;
   byId("offer-lead").textContent = offer.lead;
   byId("offer-type").textContent = offer.type;
-  byId("offer-status").textContent = `Zaktualizowano ${formatDate(offer.updatedAt)}`;
   byId("apply-button").href = offer.url;
   for (const [id, items] of [["offer-mission", offer.mission], ["offer-benefits", offer.benefits]]) {
     byId(id).replaceChildren(...items.map((item) => { const li = document.createElement("li"); li.textContent = item; return li; }));
