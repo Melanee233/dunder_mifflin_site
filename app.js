@@ -61,7 +61,6 @@ function renderOffer(offer) {
   byId("offer-lead").textContent = offer.lead;
   byId("offer-type").textContent = offer.type;
   byId("offer-status").textContent = `Zaktualizowano ${formatDate(offer.updatedAt)}`;
-  byId("offer-link").href = offer.url;
   byId("apply-button").href = offer.url;
   for (const [id, items] of [["offer-mission", offer.mission], ["offer-benefits", offer.benefits]]) {
     byId(id).replaceChildren(...items.map((item) => { const li = document.createElement("li"); li.textContent = item; return li; }));

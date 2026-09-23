@@ -27,7 +27,7 @@ Aktywną wersję wybierasz przez pole `activeTheme` w pliku `content/offer.json`
 "activeTheme": "worlds-best-boss"
 ```
 
-Dostępne presety to `office-chaos`, `worlds-best-boss`, `scranton-chaos` i `deer-data`. Pozostałe presety są zapisane w pliku, ale nie są renderowane na stronie, dopóki nie ustawisz ich jako aktywnych.
+Dostępne presety to `soft-confidence`, `office-chaos`, `worlds-best-boss`, `scranton-chaos` i `deer-data`. Pozostałe presety są zapisane w pliku, ale nie są renderowane na stronie, dopóki nie ustawisz ich jako aktywnych.
 
 Kolorystykę i grafiki każdego presetu zmieniasz w sekcji `themes`:
 

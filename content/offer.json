@@ -16,8 +16,25 @@
   ],
   "type": "full-time • senior / expert",
   "url": "https://career.softserveinc.com/en-us/vacancies/data-architect-aws-89512",
-  "activeTheme": "office-chaos",
+  "activeTheme": "soft-confidence",
   "themes": {
+    "soft-confidence": {
+      "ink": "#3d2632",
+      "paper": "#fff7fa",
+      "yellow": "#ffd9e6",
+      "blue": "#d6edf0",
+      "pink": "#f2b9ca",
+      "orange": "#e46586",
+      "mode": "soft-confidence",
+      "gallery": {
+        "primaryImage": "assets/the-office/michael-boss-mug.png",
+        "primaryAlt": "Michael Scott przy biurku z kubkiem World's Best Boss",
+        "primaryCaption": "A very official confidence boost",
+        "secondaryImage": "assets/the-office/michael-grimace.png",
+        "secondaryAlt": "Michael Scott robiący zabawną minę",
+        "secondaryCaption": "You can survive one conversation"
+      }
+    },
     "office-chaos": {
       "ink": "#20211f",
       "paper": "#f5f0e7",
