@@ -7,7 +7,7 @@ const fallbackOffer = {
   mission: ["projektowanie architektury danych i kluczowych modeli", "łączenie potrzeb biznesu, analityki i technologii", "wyznaczanie standardów jakości, bezpieczeństwa i skalowania"],
   benefits: ["wpływ na ważne decyzje technologiczne", "zespół, który rozumie słowo „dlaczego”", "przestrzeń na eksperymenty i rozwój"],
   type: "full-time • senior / expert",
-  url: "https://www.linkedin.com/jobs/",
+  url: "https://career.softserveinc.com/en-us/vacancies/data-architect-aws-89512",
   theme: {
     ink: "#20211f",
     paper: "#f5f0e7",
