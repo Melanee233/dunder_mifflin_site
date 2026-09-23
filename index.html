@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Tajny portal rekrutacyjny dla przyszłego Data Architecta." />
+    <title>Projekt: Data Architect 🦌</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🦌%3C/text%3E%3C/svg%3E" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="topline"><span>CONFIDENTIAL • INTERNAL RECRUITMENT MEMO</span><span id="today"></span></div>
+
+    <main>
+      <section class="hero" aria-labelledby="page-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Project Antler / candidate no. 001</p>
+          <h1 id="page-title">Wszystko wskazuje na to, że <em>musisz</em> zostać Data Architectem.</h1>
+          <p class="intro">To nie jest zwykła oferta pracy. To strategiczna misja, w której dane spotykają się z dobrymi decyzjami, a czasem także z koniem, który pojawia się bez wyraźnego powodu.</p>
+          <a class="button button-primary" href="#offer">Przejdź do dowodów <span>↘</span></a>
+        </div>
+        <div class="hero-stamp" aria-label="Status: bardzo obiecujący">
+          <span class="stamp-star">✳</span>
+          <strong>VERY<br />PROMISING</strong>
+          <small>according to<br />the committee</small>
+        </div>
+      </section>
+
+      <section class="evidence-grid" aria-label="Dowody na to, że warto aplikować">
+        <article class="evidence-card card-yellow">
+          <span class="card-number">01</span>
+          <div class="emoji-art">🦌</div>
+          <h2>Masz oko do wzorców.</h2>
+          <p>Sarna też patrzy w dal i wie, że coś tu nie gra w modelu danych.</p>
+        </article>
+        <article class="evidence-card card-blue">
+          <span class="card-number">02</span>
+          <div class="emoji-art horse">🐎</div>
+          <h2>Umiesz dowozić.</h2>
+          <p>Koń nie pyta, czy sprint ma sens. Koń po prostu idzie do przodu.</p>
+        </article>
+        <article class="evidence-card card-pink">
+          <span class="card-number">03</span>
+          <div class="quote-mark">“</div>
+          <h2>Wiesz, że chaos to tylko dane bez dobrej architektury.</h2>
+          <p class="mono">— prawdopodobnie ktoś bardzo mądry z biura</p>
+        </article>
+      </section>
+
+      <section class="office-note">
+        <div class="paperclip">⌇</div>
+        <div>
+          <p class="eyebrow">A memo from the regional manager</p>
+          <p class="big-note">„Nie mówię, że to idealna praca. Mówię tylko, że byłoby bardzo dziwnie, gdybyś jej nie sprawdził.”</p>
+          <p class="note-signature">— Dział Perswazji i Saren, Scranton / Warszawa</p>
+        </div>
+        <div class="doodle">★<br /><span>APPLY?</span></div>
+      </section>
+
+      <section class="office-gallery" aria-labelledby="office-title">
+        <div class="section-heading gallery-heading">
+          <div>
+            <p class="eyebrow">A completely serious visual investigation</p>
+            <h2 id="office-title">The Office byłoby dumne</h2>
+          </div>
+          <p class="gallery-caption">Dowody wizualne, że każda dobra decyzja zaczyna się od odrobiny chaosu.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure class="office-image-card image-large">
+            <img id="gallery-image-primary" src="assets/copier-chaos.png" alt="Michael Scott prezentujący swoje nagrody w biurze" />
+            <figcaption><span>Exhibit A</span><strong id="gallery-caption-primary">When the data pipeline finally works</strong></figcaption>
+          </figure>
+          <div class="quote-stack">
+            <blockquote><span>“</span><p>“I am Beyoncé, always.”</p><cite>— Michael Scott, unofficial data strategy</cite></blockquote>
+            <blockquote><span>“</span><p>“I declare bankruptcy!”</p><cite>— a perfectly valid response to technical debt</cite></blockquote>
+          </div>
+          <figure class="office-image-card image-wide">
+            <img id="gallery-image-secondary" src="assets/antler-meeting.png" alt="Ilustracja sarenki i konia na spotkaniu o architekturze danych" />
+            <figcaption><span>Exhibit B</span><strong id="gallery-caption-secondary">Everyone has an opinion about the data model</strong></figcaption>
+          </figure>
+          <blockquote class="quote-wide"><span>“</span><p>“That's what she said.”</p><cite>— the only acceptable answer to an overlong architecture meeting</cite></blockquote>
+        </div>
+      </section>
+
+      <section id="offer" class="offer-section" aria-labelledby="offer-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">The actual opportunity</p>
+            <h2 id="offer-title">Oferta, której nie da się odzobaczyć</h2>
+          </div>
+          <div class="updated-badge"><span class="status-dot"></span><span id="offer-status">Ładowanie oferty…</span></div>
+        </div>
+
+        <div class="offer-layout">
+          <article class="offer-paper">
+            <div class="paper-header"><span id="offer-company">Firma</span><span id="offer-location">Lokalizacja</span></div>
+            <h3 id="offer-role">Data Architect</h3>
+            <p id="offer-lead" class="offer-lead"></p>
+            <div class="offer-columns">
+              <div><h4>Twoja misja</h4><ul id="offer-mission"></ul></div>
+              <div><h4>Co zyskujesz</h4><ul id="offer-benefits"></ul></div>
+            </div>
+            <div class="offer-footer"><span id="offer-type"></span><a id="offer-link" class="button button-dark" href="#" target="_blank" rel="noreferrer">Zobacz pełną ofertę ↗</a></div>
+          </article>
+
+          <aside class="side-note">
+            <div class="sticky">IMPORTANT</div>
+            <h3>Wymagania nieoficjalne</h3>
+            <ul>
+              <li>umiejętność mówienia „to zależy od modelu danych” z przekonaniem</li>
+              <li>odporność na spotkania, które mogły być mailem</li>
+              <li>akceptacja obecności saren w procesie decyzyjnym</li>
+            </ul>
+            <p class="side-foot">Oferta aktualizuje się z pliku <code>content/offer.json</code>.</p>
+          </aside>
+        </div>
+      </section>
+
+      <section class="final-cta">
+        <div class="final-deer">🦌</div>
+        <div><p class="eyebrow">Final recommendation</p><h2>Niech moc schematów będzie z Tobą.</h2><p>Najgorsze, co może się wydarzyć, to interesująca rozmowa rekrutacyjna.</p></div>
+        <a class="button button-primary" id="apply-button" href="#" target="_blank" rel="noreferrer">Zgłoś się na rozmowę ↗</a>
+      </section>
+    </main>
+
+    <footer><span>Made with unreasonable amounts of encouragement.</span><span>© <span id="year"></span> The Antler Committee</span></footer>
+    <script src="app.js"></script>
+  </body>
+</html>

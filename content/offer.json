@@ -1,0 +1,90 @@
+{
+  "updatedAt": "2026-09-23",
+  "company": "Firma, która lubi porządek w danych",
+  "location": "Warszawa / hybrydowo",
+  "role": "Data Architect",
+  "lead": "Szukamy osoby, która pomoże zamienić skomplikowany ekosystem danych w coś, co ma sens także po trzecim spotkaniu statusowym.",
+  "mission": [
+    "projektowanie architektury danych i kluczowych modeli",
+    "łączenie potrzeb biznesu, analityki i technologii",
+    "wyznaczanie standardów jakości, bezpieczeństwa i skalowania"
+  ],
+  "benefits": [
+    "wpływ na ważne decyzje technologiczne",
+    "zespół, który rozumie słowo „dlaczego”",
+    "przestrzeń na eksperymenty i rozwój"
+  ],
+  "type": "full-time • senior / expert",
+  "url": "https://www.linkedin.com/jobs/",
+  "activeTheme": "office-chaos",
+  "themes": {
+    "office-chaos": {
+      "ink": "#20211f",
+      "paper": "#f5f0e7",
+      "yellow": "#f4d35e",
+      "blue": "#a9d7dc",
+      "pink": "#edb7ad",
+      "orange": "#ec6c3f",
+      "mode": "office-chaos",
+      "gallery": {
+        "primaryImage": "assets/the-office/michael-joke.png",
+        "primaryAlt": "Michael Scott w bardzo poważnym momencie",
+        "primaryCaption": "When the pipeline has 99 problems",
+        "secondaryImage": "assets/the-office/michael-fist.png",
+        "secondaryAlt": "Michael Scott z zaciśniętą pięścią w biurze",
+        "secondaryCaption": "Stakeholder alignment, but make it dramatic"
+      }
+    },
+    "worlds-best-boss": {
+      "ink": "#16233b",
+      "paper": "#eef3f5",
+      "yellow": "#d9e8ed",
+      "blue": "#a9c5d1",
+      "pink": "#e6c6bc",
+      "orange": "#b45c3b",
+      "mode": "worlds-best-boss",
+      "gallery": {
+        "primaryImage": "assets/the-office/michael-boss-mug.png",
+        "primaryAlt": "Michael Scott przy biurku z kubkiem World's Best Boss",
+        "primaryCaption": "World's best data architecture candidate",
+        "secondaryImage": "assets/the-office/michael-serious-mug.png",
+        "secondaryAlt": "Michael Scott trzymający kubek World's Best Boss",
+        "secondaryCaption": "The face of a man who has a five-year data plan"
+      }
+    },
+    "scranton-chaos": {
+      "ink": "#f7f1e5",
+      "paper": "#29343a",
+      "yellow": "#d4a644",
+      "blue": "#46616a",
+      "pink": "#8f5f5b",
+      "orange": "#ee7950",
+      "mode": "scranton-chaos",
+      "gallery": {
+        "primaryImage": "assets/the-office/michael-car.png",
+        "primaryAlt": "Michael Scott w czerwonym samochodzie",
+        "primaryCaption": "Driving straight into the data strategy",
+        "secondaryImage": "assets/the-office/dwight-fridge.png",
+        "secondaryAlt": "Dwight Schrute przy lodówce w biurze",
+        "secondaryCaption": "A very serious review of the data pantry"
+      }
+    },
+    "deer-data": {
+      "ink": "#1f2922",
+      "paper": "#edf0df",
+      "yellow": "#d6ba62",
+      "blue": "#b2c9b4",
+      "pink": "#d6aaa1",
+      "orange": "#9b553d",
+      "mode": "deer-data",
+      "gallery": {
+        "primaryImage": "assets/antler-meeting.png",
+        "primaryAlt": "Sarenka i koń na spotkaniu o architekturze danych",
+        "primaryCaption": "Stakeholder meeting: woodland edition",
+        "secondaryImage": "assets/the-office/dwight-attention.png",
+        "secondaryAlt": "Dwight Schrute patrzący bardzo intensywnie",
+        "secondaryCaption": "You have my undivided attention"
+      }
+    }
+  }
+}
