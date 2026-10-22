@@ -1,29 +1,18 @@
-const fallbackOffer = {
-  updatedAt: "2026-09-23",
-  company: "Firma, która lubi porządek w danych",
-  location: "Warszawa / hybrydowo",
-  role: "Data Architect",
-  lead: "Szukamy osoby, która pomoże zamienić skomplikowany ekosystem danych w coś, co ma sens także po trzecim spotkaniu statusowym.",
-  mission: ["projektowanie architektury danych i kluczowych modeli", "łączenie potrzeb biznesu, analityki i technologii", "wyznaczanie standardów jakości, bezpieczeństwa i skalowania"],
-  benefits: ["wpływ na ważne decyzje technologiczne", "zespół, który rozumie słowo „dlaczego”", "przestrzeń na eksperymenty i rozwój"],
-  type: "full-time • senior / expert",
-  url: "https://career.softserveinc.com/en-us/vacancies/data-architect-aws-89512",
-  theme: {
-    ink: "#20211f",
-    paper: "#f5f0e7",
-    yellow: "#f4d35e",
-    blue: "#a9d7dc",
-    pink: "#edb7ad",
-    orange: "#ec6c3f",
-    mode: "office-chaos",
-    gallery: {
-      primaryImage: "assets/copier-chaos.png",
-      primaryAlt: "Michael Scott prezentujący swoje nagrody w biurze",
-      primaryCaption: "When the data pipeline finally works",
-      secondaryImage: "assets/antler-meeting.png",
-      secondaryAlt: "Ilustracja sarenki i konia na spotkaniu o architekturze danych",
-      secondaryCaption: "Everyone has an opinion about the data model"
-    }
+const fallbackTheme = {
+  ink: "#2f2b2a",
+  paper: "#f7f2e8",
+  yellow: "#f6dc8c",
+  blue: "#d3e8e6",
+  pink: "#f0cfc2",
+  orange: "#e5694f",
+  mode: "soft-confidence",
+  gallery: {
+    primaryImage: "assets/the-office/michael-boss-mug.png",
+    primaryAlt: "Michael Scott przy biurku z kubkiem World's Best Boss",
+    primaryCaption: "A very official confidence boost",
+    secondaryImage: "assets/the-office/michael-grimace.png",
+    secondaryAlt: "Michael Scott robiący zabawną minę",
+    secondaryCaption: "You can survive one conversation"
   }
 };
 
@@ -48,24 +37,11 @@ function applyTheme(theme = {}) {
   }
 }
 
-function resolveTheme(offer) {
-  return offer.themes?.[offer.activeTheme] || offer.theme || {};
-}
-
-function renderOffer(offer) {
-  applyTheme(resolveTheme(offer));
-  byId("offer-company").textContent = offer.company;
-  byId("offer-location").textContent = offer.location;
-  byId("offer-role").textContent = offer.role;
-  byId("offer-lead").textContent = offer.lead;
-  byId("offer-type").textContent = offer.type;
-  byId("apply-button").href = offer.url;
-  for (const [id, items] of [["offer-mission", offer.mission], ["offer-benefits", offer.benefits]]) {
-    byId(id).replaceChildren(...items.map((item) => { const li = document.createElement("li"); li.textContent = item; return li; }));
-  }
+function resolveTheme(config) {
+  return config.themes?.[config.activeTheme] || {};
 }
 
 byId("today").textContent = new Intl.DateTimeFormat("pl-PL", { day: "2-digit", month: "2-digit", year: "numeric" }).format(new Date());
 byId("year").textContent = new Date().getFullYear();
-renderOffer(fallbackOffer);
-fetch("content/offer.json", { cache: "no-store" }).then((response) => response.ok ? response.json() : Promise.reject()).then(renderOffer).catch(() => {});
+applyTheme(fallbackTheme);
+fetch("content/theme.json", { cache: "no-store" }).then((response) => response.ok ? response.json() : Promise.reject()).then((config) => applyTheme(resolveTheme(config))).catch(() => {});

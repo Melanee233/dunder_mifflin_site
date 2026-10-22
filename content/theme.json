@@ -1,30 +1,13 @@
 {
-  "updatedAt": "2026-09-23",
-  "company": "Firma, która lubi porządek w danych",
-  "location": "Warszawa / hybrydowo",
-  "role": "Data Architect",
-  "lead": "Szukamy osoby, która pomoże zamienić skomplikowany ekosystem danych w coś, co ma sens także po trzecim spotkaniu statusowym.",
-  "mission": [
-    "projektowanie architektury danych i kluczowych modeli",
-    "łączenie potrzeb biznesu, analityki i technologii",
-    "wyznaczanie standardów jakości, bezpieczeństwa i skalowania"
-  ],
-  "benefits": [
-    "wpływ na ważne decyzje technologiczne",
-    "zespół, który rozumie słowo „dlaczego”",
-    "przestrzeń na eksperymenty i rozwój"
-  ],
-  "type": "full-time • senior / expert",
-  "url": "https://career.softserveinc.com/en-us/vacancies/data-architect-aws-89512",
   "activeTheme": "soft-confidence",
   "themes": {
     "soft-confidence": {
-      "ink": "#3d2632",
-      "paper": "#fff7fa",
-      "yellow": "#ffd9e6",
-      "blue": "#d6edf0",
-      "pink": "#f2b9ca",
-      "orange": "#e46586",
+      "ink": "#2f2b2a",
+      "paper": "#f7f2e8",
+      "yellow": "#f6dc8c",
+      "blue": "#d3e8e6",
+      "pink": "#f0cfc2",
+      "orange": "#e5694f",
       "mode": "soft-confidence",
       "gallery": {
         "primaryImage": "assets/the-office/michael-boss-mug.png",

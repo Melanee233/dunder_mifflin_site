@@ -1,17 +1,6 @@
-# Projekt Antler — mini strona rekrutacyjna
+# Projekt Antler — mini strona motywacyjna przed rozmową
 
-## Jak aktualizować ofertę
-
-Edytuj wyłącznie plik `content/offer.json`. Strona automatycznie wyświetla z niego:
-
-- nazwę firmy i lokalizację,
-- nazwę stanowiska,
-- opis roli,
-- listę obowiązków i benefitów,
-- datę ostatniej aktualizacji,
-- link do pełnej oferty i przycisk aplikowania.
-
-Po zmianie pliku trzeba ponownie opublikować stronę, jeśli korzystasz z hostingu.
+Statyczna strona z wesołym, dodającym odwagi przekazem. Nie zawiera oferty ani linków do aplikowania.
 
 ## Automatyczny deployment na GitHub Pages
 
@@ -21,7 +10,7 @@ W ustawieniach repozytorium ustaw `Settings → Pages → Source` na **GitHub Ac
 
 ## Zmiana motywu
 
-Aktywną wersję wybierasz przez pole `activeTheme` w pliku `content/offer.json`:
+Aktywną wersję wybierasz przez pole `activeTheme` w pliku `content/theme.json`:
 
 ```json
 "activeTheme": "worlds-best-boss"
@@ -47,7 +36,7 @@ Kolorystykę i grafiki każdego presetu zmieniasz w sekcji `themes`:
 
 Zmiana `activeTheme` i push do `main` zmieni wygląd strony przy kolejnym deploymentcie. Każda wersja może mieć też własne obrazki w polach `gallery.primaryImage` i `gallery.secondaryImage`.
 
-Grafiki w sekcji inspirowanej `The Office` są zapisane lokalnie w `assets/the-office/`, więc nie zależą od zewnętrznych linków. Angielskie quote cards można później łatwo podmienić bez ruszania mechanizmu oferty.
+Grafiki w sekcji inspirowanej `The Office` są zapisane lokalnie w `assets/the-office/`, więc nie zależą od zewnętrznych linków. Angielskie quote cards można później łatwo podmienić.
 
 ## Podgląd lokalny
 
