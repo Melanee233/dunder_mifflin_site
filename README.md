@@ -1,6 +1,17 @@
-# Projekt Antler — mini strona motywacyjna przed rozmową
+# Dunder Mifflin: odprawa przed rozmową z HR
 
-Statyczna strona z wesołym, dodającym odwagi przekazem. Nie zawiera oferty ani linków do aplikowania.
+Statyczna strona motywacyjna, która ma pozytywnie nastawić przed pierwszym etapem rekrutacji (screening z osobą z HR). Czysty HTML, CSS i odrobina JavaScriptu, bez budowania i bez zależności.
+
+## Struktura
+
+- `index.html` — cała treść strony (teksty po polsku, sekcje: dobre wiadomości, odprawa w 3 krokach, checklista, stres, cytat, ekipa kibiców, plan dnia, zakończenie),
+- `styles.css` — wygląd (kolory i fonty w zmiennych na początku pliku),
+- `app.js` — data w górnym pasku oraz interaktywna checklista (stan zapisuje się w przeglądarce),
+- `assets/screening/` — zdjęcia użyte na stronie (zoptymalizowane JPEG-i).
+
+## Zmiana tekstów i kolorów
+
+Teksty edytujesz bezpośrednio w `index.html`. Paletę zmieniasz w bloku `:root` na początku `styles.css` (`--ink`, `--paper`, `--blue`, `--yellow` i pozostałe).
 
 ## Automatyczny deployment na GitHub Pages
 
@@ -8,44 +19,10 @@ Workflow znajduje się w `.github/workflows/deploy-pages.yml`. Po wypchnięciu z
 
 W ustawieniach repozytorium ustaw `Settings → Pages → Source` na **GitHub Actions**.
 
-## Zmiana motywu
-
-Aktywną wersję wybierasz przez pole `activeTheme` w pliku `content/theme.json`:
-
-```json
-"activeTheme": "worlds-best-boss"
-```
-
-Dostępne presety to `soft-confidence`, `office-chaos`, `worlds-best-boss`, `scranton-chaos` i `deer-data`. Pozostałe presety są zapisane w pliku, ale nie są renderowane na stronie, dopóki nie ustawisz ich jako aktywnych.
-
-Kolorystykę i grafiki każdego presetu zmieniasz w sekcji `themes`:
-
-```json
-"themes": {
-  "worlds-best-boss": {
-    "ink": "#20211f",
-    "paper": "#f5f0e7",
-    "yellow": "#f4d35e",
-    "blue": "#a9d7dc",
-    "pink": "#edb7ad",
-    "orange": "#ec6c3f",
-    "mode": "worlds-best-boss"
-  }
-}
-```
-
-Zmiana `activeTheme` i push do `main` zmieni wygląd strony przy kolejnym deploymentcie. Każda wersja może mieć też własne obrazki w polach `gallery.primaryImage` i `gallery.secondaryImage`.
-
-Grafiki w sekcji inspirowanej `The Office` są zapisane lokalnie w `assets/the-office/`, więc nie zależą od zewnętrznych linków. Angielskie quote cards można później łatwo podmienić.
-
 ## Podgląd lokalny
-
-Ponieważ przeglądarka blokuje `fetch()` plików JSON otwieranych bezpośrednio, uruchom prosty serwer w katalogu projektu:
 
 ```bash
 python3 -m http.server 8000
 ```
 
 Następnie otwórz `http://localhost:8000`.
-
-Strona nie ma jeszcze wysyłki maili — link i automatyzację dodamy w kolejnym kroku, gdy wybierzesz skrzynkę, z której ma to wychodzić.
