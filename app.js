@@ -3,7 +3,7 @@ const byId = (id) => document.getElementById(id);
 byId("today").textContent = new Intl.DateTimeFormat("pl-PL", { day: "2-digit", month: "2-digit", year: "numeric" }).format(new Date());
 byId("year").textContent = new Date().getFullYear();
 
-const storageKey = "dm-preflight";
+const storageKey = "dm-stage2-preflight";
 const boxes = [...document.querySelectorAll(".check input")];
 const section = byId("preflight");
 const bar = byId("progress-bar");
@@ -16,7 +16,7 @@ const messages = [
   "Rozkręcasz się. Tak trzymać.",
   "Ponad połowa za Tobą.",
   "Został ostatni drobiazg.",
-  "Wszystko gotowe. Możesz lecieć! 🚀"
+  "Wszystko gotowe. Możesz wchodzić! 🚀"
 ];
 
 function render() {

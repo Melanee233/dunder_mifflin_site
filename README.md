@@ -1,13 +1,13 @@
-# Dunder Mifflin: odprawa przed rozmową z HR
+# Dunder Mifflin: odprawa przed rozmową z project managerem
 
-Statyczna strona motywacyjna, która ma pozytywnie nastawić przed pierwszym etapem rekrutacji (screening z osobą z HR). Czysty HTML, CSS i odrobina JavaScriptu, bez budowania i bez zależności.
+Statyczna strona motywacyjna, która ma pozytywnie nastawić przed drugim etapem rekrutacji (rozmowa z project managerem). Czysty HTML, CSS i odrobina JavaScriptu, bez budowania i bez zależności.
 
 ## Struktura
 
-- `index.html` — cała treść strony (teksty po polsku, sekcje: dobre wiadomości, odprawa w 3 krokach, checklista, stres, cytat, ekipa kibiców, plan dnia, zakończenie),
+- `index.html` — cała treść strony (teksty po polsku, sekcje: powody do spokoju, odprawa w 3 krokach, checklista, nerwy, karta projektu, ekipa kibiców, sprint na dziś, zakończenie),
 - `styles.css` — wygląd (kolory i fonty w zmiennych na początku pliku),
 - `app.js` — data w górnym pasku oraz interaktywna checklista (stan zapisuje się w przeglądarce),
-- `assets/screening/` — zdjęcia użyte na stronie (zoptymalizowane JPEG-i).
+- `assets/stage2/` — zdjęcia użyte na stronie (zoptymalizowane JPEG-i); `assets/screening/` to zdjęcia z poprzedniej wersji (etap 1, rozmowa z HR).
 
 ## Zmiana tekstów i kolorów
 
