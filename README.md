@@ -1,13 +1,13 @@
-# Dunder Mifflin: odprawa przed rozmową z project managerem
+# Dasz radę: odprawa przed egzaminem AWS Solutions Architect Professional
 
-Statyczna strona motywacyjna, która ma pozytywnie nastawić przed drugim etapem rekrutacji (rozmowa z project managerem). Czysty HTML, CSS i odrobina JavaScriptu, bez budowania i bez zależności.
+Statyczna strona motywacyjna i pocieszająca do przeczytania przed egzaminem AWS Certified Solutions Architect – Professional. Czysty HTML, CSS i odrobina JavaScriptu, bez budowania i bez zależności.
 
 ## Struktura
 
 - `index.html` — cała treść strony (teksty po polsku, sekcje: powody do spokoju, odprawa w 3 krokach, checklista, nerwy, karta projektu, ekipa kibiców, sprint na dziś, zakończenie),
 - `styles.css` — wygląd (kolory i fonty w zmiennych na początku pliku),
 - `app.js` — data w górnym pasku oraz interaktywna checklista (stan zapisuje się w przeglądarce),
-- `assets/stage2/` — zdjęcia użyte na stronie (zoptymalizowane JPEG-i); `assets/screening/` to zdjęcia z poprzedniej wersji (etap 1, rozmowa z HR).
+- `assets/exam/` — zdjęcia użyte na stronie (zoptymalizowane JPEG-i); `assets/stage2/` i `assets/screening/` to zdjęcia z poprzednich wersji.
 
 ## Zmiana tekstów i kolorów
 
